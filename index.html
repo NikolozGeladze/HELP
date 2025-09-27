@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Replica</title>
+</head>
+<body>
+    <!-- Header -->
+    <header style="height:56px; display:flex; align-items:center; justify-content:space-between; padding:0 16px; border-bottom:1px solid #ddd;">
+        <div style="display:flex; align-items:center;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube Logo" style="height:24px; margin-right:24px;">
+            <input type="text" placeholder="Search" style="height:32px; width:400px; padding:0 8px;">
+        </div>
+        <div style="display:flex; align-items:center;">
+            <span style="margin-right:24px;">&#128276;</span>
+            <span style="margin-right:24px;">&#128100;</span>
+            <span style="margin-right:24px;">&#128247;</span>
+            <img src="https://www.gravatar.com/avatar?d=mp" alt="User" style="height:32px; border-radius:50%;">
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div style="display:flex;">
+        <!-- Sidebar -->
+        <nav style="width:240px; border-right:1px solid #ddd; padding:16px 0; min-height:calc(100vh - 56px);">
+            <ul style="list-style:none; padding:0;">
+                <li style="padding:8px 24px;">Home</li>
+                <li style="padding:8px 24px;">Trending</li>
+                <li style="padding:8px 24px;">Subscriptions</li>
+                <li style="padding:8px 24px;">Library</li>
+                <li style="padding:8px 24px;">History</li>
+            </ul>
+        </nav>
+
+        <!-- Video Grid -->
+        <main style="flex:1; padding:24px;">
+            <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(320px, 1fr)); gap:24px;">
+                <!-- Video Card Example -->
+                <div style="border:1px solid #eee; border-radius:8px; overflow:hidden;">
+                    <img src="https://i.ytimg.com/vi/ysz5S6PUM-U/hqdefault.jpg" alt="Video Thumbnail" style="width:100%; height:180px; object-fit:cover;">
+                    <div style="padding:12px; display:flex;">
+                        <img src="https://www.gravatar.com/avatar?d=mp" alt="Channel" style="height:36px; width:36px; border-radius:50%; margin-right:12px;">
+                        <div>
+                            <h3 style="margin:0; font-size:16px;">Sample Video Title</h3>
+                            <p style="margin:4px 0 0 0; font-size:14px; color:#555;">Channel Name</p>
+                            <p style="margin:0; font-size:12px; color:#888;">1M views • 1 year ago</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat video cards for more videos -->
+                <div style="border:1px solid #eee; border-radius:8px; overflow:hidden;">
+                    <img src="https://i.ytimg.com/vi/3fumBcKC6RE/hqdefault.jpg" alt="Video Thumbnail" style="width:100%; height:180px; object-fit:cover;">
+                    <div style="padding:12px; display:flex;">
+                        <img src="https://www.gravatar.com/avatar?d=mp" alt="Channel" style="height:36px; width:36px; border-radius:50%; margin-right:12px;">
+                        <div>
+                            <h3 style="margin:0; font-size:16px;">Another Video Title</h3>
+                            <p style="margin:4px 0 0 0; font-size:14px; color:#555;">Another Channel</p>
+                            <p style="margin:0; font-size:12px; color:#888;">500K views • 2 years ago</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more video cards as needed -->
+            </div>
+        </main>
+    </div>
+</html>
